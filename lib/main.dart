@@ -7,6 +7,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -45,50 +47,38 @@ class MyApp extends StatelessWidget {
               // thickness: 0.3,
               height: 0,
             ),
-            Container(
+            Card(
               margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 20.0),
-              padding: EdgeInsets.all(10.0),
               color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.phone_outlined,
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone_outlined,
+                  color: Colors.deepPurple[700],
+                ),
+                title: Text(
+                  '+55 22 99835-1962',
+                  style: TextStyle(
+                    fontFamily: 'Questrial',
                     color: Colors.deepPurple[700],
                   ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    '+55 22 99835-1962',
-                    style: TextStyle(
-                      fontFamily: 'Questrial',
-                      color: Colors.deepPurple[700],
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
-            Container(
+            Card(
               margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 2.0),
-              padding: EdgeInsets.all(10.0),
               color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.email_outlined,
+              child: ListTile(
+                leading: Icon(
+                  Icons.email_outlined,
+                  color: Colors.deepPurple[700],
+                ),
+                title: Text(
+                  'enzomagioli.pro@gmail.com',
+                  style: TextStyle(
+                    fontFamily: 'Questrial',
                     color: Colors.deepPurple[700],
                   ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    'enzomagioli.pro@gmail.com',
-                    style: TextStyle(
-                      fontFamily: 'Questrial',
-                      color: Colors.deepPurple[700],
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
           ],
@@ -97,3 +87,23 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+// // // Row(
+// // //                   children: [
+// //                     Icon(
+// //                       Icons.email_outlined,
+// //                       color: Colors.deepPurple[700],
+// //                     ),
+// // //                     SizedBox(
+// // //                       width: 10.0,
+// // //                     ),
+//                     Text(
+//                       'enzomagioli.pro@gmail.com',
+//                       style: TextStyle(
+//                         fontFamily: 'Questrial',
+//                         color: Colors.deepPurple[700],
+//                       ),
+//                     ),
+// // //                   ],
+// // //                 ),
