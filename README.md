@@ -1,6 +1,6 @@
 # business_card_app
 
-An app that displays my business card :).
+An app that displays my business card :)
 
 
 ## Description
